@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style/style.css">
+  <title>Фронтенд</title>
+</head>
+<body>
+  <div class="header">
+    <!--Заголовок-->
+    <h1>BurlaMask</h1>
+  </div>
+
+  <div class="main">
+    <!--Основна частина-->
+    <div class = "containers">
+      <div class="container">
+      <img id="imagePreview1">
+      <input type="file" id="imageInput1" accept="image/*" class="custom-file-input" onchange="displayImages(1)">
+      <script src="scripts/script.js"></script> 
+    </div>
+
+    <div class="container">
+      <img id="imagePreview2">
+      <input type="file" id="imageInput2" accept="image/*" class="custom-file-input" onchange="displayImages(2)">
+      <script src="scripts/script.js"></script> 
+    </div>
+    </div>
+
+    <div class = "transition">
+      <div><hr></div>
+      <div><a id="submitButton">Swap faces</a></div>
+      <script src="scripts/frontend.js"></script>
+      <div><hr></div>
+    </div>
+
+    <div class="containers">
+      <div class="container">
+        <img id="resultPhoto1">
+      </div>
+
+      <div class="container">
+        <img id="resultPhoto2">
+      </div>
+    </div>
+
+  </div>
+  <div class="footer">
+    <!--Автор проекту-->
+    <h1>Author: Kilivnik Artem</h1>
+  </div>
+</body>
+</html>
